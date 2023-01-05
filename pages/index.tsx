@@ -9,6 +9,7 @@ import Homes from "../public/Homes.jpg"
 import Big from "../public/Big.jpg"
 import DrawerAppBar from "../component/majAppbar"
 import ElevationScroll from "../component/minAppbar"
+import Footer from "../component/footer"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -254,19 +255,62 @@ direction={{xs: "column", md: "row"}}
   making purposes</Typography>
   </Box>
 </Stack>
+
 <Stack
-  direction={{xs: "column"}}
+  direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
-  mt={20}>
-    
-    <Typography  textAlign="center" variant='h4'>Testimonials</Typography>
+  spacing={0}
+  mt={20}
+>
+  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "25%"}} pt={15} pb={14}
+  px={2}>
+ 
+<Typography  > Our Gallery</Typography>
+<Typography >View some of the most successful projects
+   and more by our specialists presented in this gallery.</Typography>
+   <Typography>View All Works</Typography>
 
-    <Typography textAlign="center">Testimonials from customers who are satisfied with services that have been effectively<br />
-used in marketing for as long as marketing exists.</Typography>
-  </Stack>
+  </Box>
+  <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Homes} width={335} height={320} alt="" />
+</Stack>
+
+  </Box>
+   <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Homes} width={335} height={320} alt="" />
+</Stack>
+
+  </Box>
+   <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Homes} width={335} height={320} alt="" />
+</Stack>
+
+  </Box>
+</Stack>
   
-
+<Footer />
     </>
   )
 }
