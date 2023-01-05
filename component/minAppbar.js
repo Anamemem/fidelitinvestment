@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'FEATURES', 'ABOUT US', 'SERVICES', 'BLOG', 'PROJECTS'];
+const navItems = ['HOME', 'FEATURES', 'ABOUT US', 'SERVICES', 'BLOG', 'PROJECTS', 'LOGIN', 'REGISTER'];
 
 export default function ElevationScroll(props) {
   const { window } = props;
