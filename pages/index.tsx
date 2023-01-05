@@ -3,6 +3,10 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Slideshow from "../component/slideShow" 
+import {  Stack, Typography, Box } from '@mui/material';  
+import Service from "../public/Service.png"
+import Homes from "../public/Homes.jpg"
+import Big from "../public/Big.jpg"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +19,249 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Slideshow />
+     <Slideshow />
+
+     <Stack
+  direction="column"
+  justifyContent="center"
+  alignItems="center"
+  mt={10}>
+    
+    <Typography variant='h4'>We Are Invetex...</Typography>
+
+    <Typography textAlign="center">Economic services provided by the finance industry, which encompasses a broad<br />
+range of businesses that manage money, including credit unions.</Typography>
+  </Stack>
+
+  <Stack
+  direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+  spacing={8}
+  mt={5}
+>
+  <Box >
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+  spacing={6}
+  mt={10}
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+  <Box >
+    <Stack
+direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+  spacing={6}
+  mt={10}
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+   <Box >
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+  spacing={6}
+  mt={10}
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+</Stack>
+
+
+ <Stack
+  direction={{xs: "column"}}
+  justifyContent="center"
+  alignItems="center"
+  mt={20}>
+    
+    <Typography  textAlign="center" variant='h4'>Profitable Investments</Typography>
+
+    <Typography textAlign="center">Economic services provided by the finance industry, which encompasses a broad<br />
+range of businesses that manage money, including credit unions.</Typography>
+  </Stack>
+
+  <Stack
+  direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+  spacing={8}
+  mt={10}
+>
+  <Box >
+
+    <Image src={Homes} width={300} alt="" />
+
+<Typography  >Market Forecasting</Typography>
+<Typography  >Market-leading experience and services</Typography>
+<Typography >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+ 
+   
+   <Box >
+
+    <Image src={Homes} width={300} alt="" />
+
+<Typography  >Market Forecasting</Typography>
+<Typography  >Market-leading experience and services</Typography>
+<Typography >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+  <Box >
+
+    <Image src={Homes} width={300} alt="" />
+
+<Typography  >Market Forecasting</Typography>
+<Typography  >Market-leading experience and services</Typography>
+<Typography >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+ 
+</Stack>
+
+<Stack
+         
+          direction={{ xs: "column", md: "row" }}
+          alignItems={"center"}
+          mt={{xs: "50px"}}
+          // justifyContent={{xs:"flex-start",}}
+          spacing={{ xs: "0.00vw", md: "3.99vw" }}
+        >
+          <Box   
+          maxWidth={{ md: "50.54vw" }}  width="100%">
+            <Image src={Big} alt="heroImage"  layout="responsive" />
+          </Box>
+          <Box  mt={5} maxWidth={{ md: "43.54vw" }}>
+            <Typography  textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
+             fontSize={{xs:"28px", sm:"40px", md:"3.25vw"}} variant="h1">
+           We are always ahead<br />
+Professional solutions for your business.
+
+            </Typography>
+
+            <Typography textAlign="center">
+            We provide premium customer support and offer affiliate programs.
+            </Typography>
+           
+
+           
+          </Box>
+        </Stack>
+
+        <Stack
+  direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+  spacing={0}
+  mt={20}
+>
+  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+  <Box style={{backgroundColor: "#EADDCA"}} width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+   <Box style={{backgroundColor: "#343434"}} width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+   <Box style={{backgroundColor: "black", color: "white"}} width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+    <Stack
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+ 
+>
+
+    <Image src={Service} width={100} alt="" />
+</Stack>
+<Typography textAlign="center" >Market Forecasting</Typography>
+<Typography textAlign="center" >Market-leading experience and services</Typography>
+<Typography textAlign="center" >Preparation of detailed company <br />
+  specific models used for decision <br />
+  making purposes</Typography>
+  </Box>
+</Stack>
+<Stack
+  direction={{xs: "column"}}
+  justifyContent="center"
+  alignItems="center"
+  mt={20}>
+    
+    <Typography  textAlign="center" variant='h4'>Testimonials</Typography>
+
+    <Typography textAlign="center">Testimonials from customers who are satisfied with services that have been effectively<br />
+used in marketing for as long as marketing exists.</Typography>
+  </Stack>
+  
+
     </>
   )
 }
