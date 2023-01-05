@@ -11,7 +11,7 @@ import ElevationScroll from "../component/minAppbar"
 export default function Register() {
     return ( <>
     <ElevationScroll />
-    <Box px={{xs:"16px",md:0}} sx={{backgroundColor:"#424242"}}>
+    <Box px={{xs:"16px",md:0}} sx={{backgroundColor:"#424242"}} height="100vh">
       <Grid container mt={{md:"3.33vw"}}>
        <Grid item xs={12} md={12} mt={{xs:"12.00vw", md:"4.17vw"}} sx={{ mx: "auto", textAlign: "center" }}>
        <Typography variant='h4'
@@ -26,7 +26,7 @@ export default function Register() {
               INVETEX
             </Typography>
             <Stack width={"100%"} maxWidth={{   md: "32.22vw" }} mx="auto" 
-          spacing={{xs:"6.00vw", md:"1.08vw"}} sx={{ mt:{xs:"4.00vw", md:"1.39vw"}, }}>
+          spacing={{xs:"6.00vw", md:"0.08vw"}} sx={{ mt:{xs:"4.00vw", md:"1.39vw"}, }}>
              <Box 
              py={{xs:"1.40vw", md:"1.04vw"}}
              px={{xs:"3.00vw", md:"1.74vw"}}
