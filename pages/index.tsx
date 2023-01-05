@@ -7,7 +7,7 @@ import {  Stack, Typography, Box } from '@mui/material';
 import Service from "../public/Service.png"
 import Homes from "../public/Homes.jpg"
 import Big from "../public/Big.jpg"
-import DrawerAppBar from "../component/majAppbar"
+// import DrawerAppBar from "../component/majAppbar"
 import ElevationScroll from "../component/minAppbar"
 
 
@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <Slideshow />
-     <DrawerAppBar />
+     {/* <DrawerAppBar /> */}
      <ElevationScroll />
 
      <Stack
