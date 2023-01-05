@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'FEATURES', 'ABOUT US', 'SERVICES', 'BLOG', 'PROJECTS'];
+const navItems = ['HOME', 'ABOUT US', 'SERVICES',  'LOGIN', 'REGISTER'];
 
 export default function ElevationScroll(props) {
   const { window } = props;
@@ -45,7 +45,7 @@ export default function ElevationScroll(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{backgroundColor:"transparent", mt: 8}}>
+      <AppBar component="nav" sx={{backgroundColor:"#424242"}}>
         <Toolbar>
          
           <Typography
@@ -64,9 +64,9 @@ export default function ElevationScroll(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: 2 }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: 2, }} >
             {navItems.map((item) => (
-              <Button key={item} >
+              <Button key={item} sx={{color: "#52b202"}}>
                 {item}
               </Button>
             ))}
