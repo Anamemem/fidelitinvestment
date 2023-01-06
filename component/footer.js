@@ -38,9 +38,7 @@ totam rem aperiam, eaque ipsa quae.</Typography>
                 <Stack direction="column" spacing={5}
               >
 
-                <input placeholder='Name*'></input>
-                <input placeholder='email*'></input>
-                <textarea placeholder='message'></textarea>
+               
                 </Stack>
                
                 </Box>
