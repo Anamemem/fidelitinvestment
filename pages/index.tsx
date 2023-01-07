@@ -3,13 +3,19 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 // import styles from '../styles/Home.module.css'
 import Slideshow from "../component/slideShow" 
+import Testimonial from "../component/testimonial" 
 import {  Stack, Typography, Box } from '@mui/material';  
 import Service from "../public/Service.png"
 import Homes from "../public/Homes.jpg"
 import Big from "../public/Big.jpg"
+import Client from "../public/client.png"
+import Contact from "../public/contact.jpg"
+import Staff from "../public/staff.png"
 // import DrawerAppBar from "../component/majAppbar"
 import ElevationScroll from "../component/minAppbar"
 import Footer from "../component/footer"
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -99,12 +105,13 @@ direction={{xs: "column", md: "row"}}
   </Box>
 </Stack>
 
-
- <Stack
+<Box style={{backgroundColor: "lightgray"}}>
+ <Stack 
   direction={{xs: "column"}}
   justifyContent="center"
   alignItems="center"
-  mt={20}>
+  mt={20}
+  p={5}>
     
     <Typography  textAlign="center" variant='h4'>Profitable Investments</Typography>
 
@@ -112,12 +119,13 @@ direction={{xs: "column", md: "row"}}
 range of businesses that manage money, including credit unions.</Typography>
   </Stack>
 
-  <Stack
+  <Stack 
   direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
   spacing={8}
   mt={10}
+  p={12}
 >
   <Box >
 
@@ -153,12 +161,12 @@ range of businesses that manage money, including credit unions.</Typography>
   </Box>
  
 </Stack>
-
+</Box>
 <Stack
          
           direction={{ xs: "column", md: "row" }}
           alignItems={"center"}
-          mt={{xs: "50px"}}
+        
           // justifyContent={{xs:"flex-start",}}
           spacing={{ xs: "0.00vw", md: "3.99vw" }}
         >
@@ -166,17 +174,43 @@ range of businesses that manage money, including credit unions.</Typography>
           maxWidth={{ md: "50.54vw" }}  width="100%">
             <Image src={Big} alt="heroImage"  layout="responsive" />
           </Box>
-          <Box  mt={5} maxWidth={{ md: "43.54vw" }}>
-            <Typography  textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
+          <Box   maxWidth={{ md: "43.54vw" }}>
+            <Typography   textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
              fontSize={{xs:"28px", sm:"40px", md:"3.25vw"}} variant="h1">
            We are always ahead<br />
 Professional solutions for your business.
 
             </Typography>
 
-            <Typography textAlign="center">
+            <Typography textAlign="center" mt={5}>
             We provide premium customer support and offer affiliate programs.
             </Typography>
+
+            <Stack 
+            direction={{xs: "column", md: "row"}}
+             justifyContent="center"
+             spacing={10}
+             alignItems="center"
+             mt={10}>
+              <Box>
+
+              <Typography textAlign="center" variant='h3'>856</Typography>
+              <Typography textAlign="center">Satisfied client</Typography>
+              <Typography textAlign="center"> Market-leading<br /> experience</Typography>
+              </Box>
+              <Box>
+
+<Typography textAlign="center" variant='h3'>238</Typography>
+<Typography textAlign="center">Satisfied client</Typography>
+<Typography textAlign="center"> Market-leading<br /> experience</Typography>
+</Box>
+<Box>
+
+<Typography textAlign="center" variant='h3'>341</Typography>
+<Typography textAlign="center">Satisfied client</Typography>
+<Typography pb={5} textAlign="center"> Market-leading<br /> experience</Typography>
+</Box>
+             </Stack>
            
 
            
@@ -188,9 +222,10 @@ Professional solutions for your business.
   justifyContent="center"
   alignItems="center"
   spacing={0}
-  mt={20}
+  mt={-0.8}
+  
 >
-  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "27%"}} pt={10} pb={10}>
     <Stack
   direction="row"
   justifyContent="center"
@@ -256,35 +291,39 @@ direction={{xs: "column", md: "row"}}
   </Box>
 </Stack>
 
+
+<Testimonial />
+
+
 <Stack
   direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
   spacing={0}
-  mt={20}
+ mt={10}
 >
-  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "25%"}} pt={15} pb={14}
-  px={2}>
+  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "23%"}} pt={12} pb={14}
+  >
  
-<Typography  > Our Gallery</Typography>
-<Typography >View some of the most successful projects
+<Typography   px={2}> Our Gallery</Typography>
+<Typography  px={2}>View some of the most successful projects
    and more by our specialists presented in this gallery.</Typography>
-   <Typography>View All Works</Typography>
-
+   <Typography px={2}>View All Works</Typography>
+ 
   </Box>
-  <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+  <Box  width={{xs:"100%", md: "27%"}} >
     <Stack
 direction={{xs: "column", md: "row"}}
   justifyContent="center"
-  alignItems="center"
+  alignItems="center"   
  
 >
 
-    <Image src={Homes} width={335} height={320} alt="" />
+    <Image src={Homes} width={365} height={330} alt="" />
 </Stack>
 
   </Box>
-   <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+   <Box  width={{xs:"100%", md: "25%"}}  >
     <Stack
   direction="row"
   justifyContent="center"
@@ -292,11 +331,11 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Homes} width={335} height={320} alt="" />
+    <Image src={Homes} width={365} height={330} alt="" />
 </Stack>
 
   </Box>
-   <Box  width={{xs:"100%", md: "25%"}} pt={10} pb={10}>
+   <Box  width={{xs:"100%", md: "25%"}}  >
     <Stack
   direction="row"
   justifyContent="center"
@@ -304,11 +343,131 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Homes} width={335} height={320} alt="" />
+    <Image src={Homes} width={365} height={330} alt="" />
 </Stack>
 
   </Box>
 </Stack>
+<Stack
+  direction={{xs: "column"}}
+  justifyContent="center"
+  alignItems="center"
+  mt={20}>
+    
+    <Typography  textAlign="center" variant='h4'>Our staff</Typography>
+
+    <Typography textAlign="center"> 
+    We work to make your business start effectively working for you.<br />
+Meet the financial and marketing specialists.</Typography>
+
+
+  </Stack>
+  <Stack spacing={15}
+  mt={5}
+  mb={5}
+  direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center">
+    <Box>
+
+  <Image src={Staff}  width={300} height={300}  alt="" />
+  <Typography mt={5} textAlign="center">Steven Monroe</Typography>
+  <Typography textAlign="center">Marketing & Advertising</Typography>
+    </Box>
+  
+    <Box>
+
+<Image src={Staff}  width={300} height={300}  alt="" />
+<Typography mt={5} textAlign="center">Steven Monroe</Typography>
+  <Typography textAlign="center">Marketing & Advertising</Typography>
+  </Box>
+  <Box>
+
+  <Image src={Staff}  width={300} height={300}  alt="" />
+  <Typography mt={5} textAlign="center">Steven Monroe</Typography>
+  <Typography textAlign="center">Marketing & Advertising</Typography>
+    </Box>
+
+  </Stack>
+  <Stack
+         
+          direction={{ xs: "column", md: "row" }}
+          alignItems={"center"}
+          mt={{xs: "60px"}}
+          
+          // justifyContent={{xs:"flex-start",}}
+          spacing={{ xs: "0.00vw", md: "3.99vw" }}
+        >
+          <Box   
+          maxWidth={{ md: "55vw" }}  width="100%">
+            <Image src={Contact} alt="heroImage"  layout="responsive" />
+          </Box>
+          <Box  mt={-10} maxWidth={{ md: "43.54vw" }}>
+            <Typography  textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
+             fontSize={{xs:"28px", sm:"40px", md:"3.25vw"}} variant="h1">
+        Request a Free Consultation
+
+            </Typography>
+
+            <Typography textAlign="center">
+            Perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque.
+            </Typography>
+            <Stack mt={5} direction={{xs: "column", md: "row"}} p={2}
+            spacing={5}>
+              <TextField label="name*"/>
+              <TextField  label="email*"/>
+              
+            </Stack>
+            <Stack mt={2} direction={{xs: "column", md: "row"}} p={2}
+            spacing={5}>
+              <TextField label="phone"/>
+              <TextField label="subject" />
+             
+            </Stack>
+            <Stack  p={2}>
+
+           <textarea style={{width: "100%", padding: "50px", marginTop: "20px"}}
+           placeholder="message"
+           ></textarea>
+            </Stack>
+           <Stack
+           justifyContent="center"
+           alignItems="center"
+           pr={5}>
+
+           <Button style={{backgroundColor: "lightgreen", color: "white"}}>Send Request</Button>
+           </Stack>
+           
+          </Box>
+        </Stack>
+        <Stack
+  direction={{xs: "column"}}
+  justifyContent="center"
+  alignItems="center"
+  mt={20}>
+    
+    <Typography  textAlign="center" variant='h4'>Our Clients</Typography>
+
+    <Typography textAlign="center"> 
+    Perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque<br />
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</Typography>
+
+
+  </Stack>
+  <Stack
+  direction={{xs: "column", md: "row"}}
+  justifyContent="center"
+  alignItems="center"
+  spacing={10}
+  mt={10}
+  mb={5}
+  >
+<Image src={Client} width={150} height={100} alt="" />
+<Image src={Client} width={150} height={100} alt="" />
+<Image src={Client} width={150} height={100} alt="" />
+<Image src={Client} width={150} height={100} alt="" />
+<Image src={Client} width={150} height={100} alt="" />
+  </Stack>
   
 <Footer />
     </>
