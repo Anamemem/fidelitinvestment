@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Grid from '@mui/material/Grid';
 import CircularProgress from '@mui/material/CircularProgress';
-import { TextField, Typography, Button, InputAdornment, Box, Alert, } from '@mui/material'
+import { TextField, Typography, Button, Box,  } from '@mui/material'
 import Stack from '@mui/material/Stack';
 import Image from 'next/image';
 import Link from 'next/link'
@@ -65,7 +65,9 @@ export default function Register() {
                 //   borderRadius={{ xs: "6.60vw", md: "3.29vw" }}
                 //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
                 >
-                    <Button variant="contained"  sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 5 }}>Registeration</Button>
+                  <Stack alignItems="center" justifyContent="center" >
+                    <Button variant="contained"  sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 5, px: 10 }}>Registeration</Button>
+                    </Stack>
                 </Box>
 
             </Stack>
