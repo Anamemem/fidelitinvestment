@@ -1,9 +1,9 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -66,7 +66,7 @@ export default function ElevationScroll(props) {
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: 2, }} >
             {navItems.map((item) => (
-              <Button key={item} sx={{color: "#52b202"}}>
+              <Button key={item} sx={{color: "white"}}>
                 {item}
               </Button>
             ))}
