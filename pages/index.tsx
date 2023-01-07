@@ -315,7 +315,7 @@ direction={{xs: "column", md: "row"}}
     <Stack
 direction={{xs: "column", md: "row"}}
   justifyContent="center"
-  alignItems="center"
+  alignItems="center"   
  
 >
 
