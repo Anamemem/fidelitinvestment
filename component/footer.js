@@ -38,11 +38,6 @@ Email: invetex@yoursite.com</Typography>
 </Stack>
 </Stack>
                 </Box>
-                <Box>
-
-                <Typography>Recent Posts</Typography>
-               
-                </Box>
                 <Box spacing={3}>
                <Box pr={{ xs: "25px", sm: "39pxs", md: "120px" }}>
                 <Typography>Contact Form</Typography>

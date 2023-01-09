@@ -36,7 +36,7 @@ used in marketing for as long as marketing exists.</Typography>
     <Stack justifyContent="center"
   alignItems="center">
 
-    <Image src={Avatar} width={100} height={100} style={{borderRadius: "50px"}} alt="" />
+    <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
   </Stack>
 
     <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
@@ -52,7 +52,7 @@ used in marketing for as long as marketing exists.</Typography>
     <Stack justifyContent="center"
   alignItems="center">
 
-    <Image src={Avatar} width={100} height={100} style={{borderRadius: "50px"}} alt="" />
+    <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
   </Stack>
 
     <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
@@ -68,7 +68,7 @@ used in marketing for as long as marketing exists.</Typography>
     <Stack justifyContent="center"
   alignItems="center">
 
-    <Image src={Avatar} width={100} height={100} style={{borderRadius: "50px"}} alt="" />
+    <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
   </Stack>
 
     <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
