@@ -61,7 +61,7 @@ range of businesses that manage money, including credit unions.</Typography>
   mt={10}
 >
 
-    <Image src={Service} width={100} alt="" />
+    <Image src="/Service.png" width={100} height={100} alt="" />
 </Stack>
 <Typography textAlign="center" >Market Forecasting</Typography>
 <Typography textAlign="center" >Market-leading experience and services</Typography>
@@ -78,7 +78,7 @@ direction={{xs: "column", md: "row"}}
   mt={10}
 >
 
-    <Image src={Service} width={100} alt="" />
+    <Image src="/Service.png" width={100} height={100} alt="" />
 </Stack>
 <Typography textAlign="center" >Market Forecasting</Typography>
 <Typography textAlign="center" >Market-leading experience and services</Typography>
@@ -129,7 +129,7 @@ range of businesses that manage money, including credit unions.</Typography>
 >
   <Box >
 
-    <Image src={Homes} width={300} alt="" />
+    <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
 
 <Typography  >Market Forecasting</Typography>
 <Typography  >Market-leading experience and services</Typography>
@@ -141,7 +141,7 @@ range of businesses that manage money, including credit unions.</Typography>
    
    <Box >
 
-    <Image src={Homes} width={300} alt="" />
+   <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
 
 <Typography  >Market Forecasting</Typography>
 <Typography  >Market-leading experience and services</Typography>
@@ -151,7 +151,7 @@ range of businesses that manage money, including credit unions.</Typography>
   </Box>
   <Box >
 
-    <Image src={Homes} width={300} alt="" />
+  <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
 
 <Typography  >Market Forecasting</Typography>
 <Typography  >Market-leading experience and services</Typography>
@@ -172,7 +172,7 @@ range of businesses that manage money, including credit unions.</Typography>
         >
           <Box   
           maxWidth={{ md: "50.54vw" }}  width="100%">
-            <Image src={Big} alt="heroImage"  layout="responsive" />
+            <Image src="/Big.jpg" alt="heroImage" width={700} height={600} />
           </Box>
           <Box   maxWidth={{ md: "43.54vw" }}>
             <Typography   textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
@@ -249,7 +249,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Service} width={100} alt="" />
+    <Image src="/Service.png" width={100} height={100} alt="" />
 </Stack>
 <Typography textAlign="center" >Market Forecasting</Typography>
 <Typography textAlign="center" >Market-leading experience and services</Typography>
@@ -265,7 +265,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Service} width={100} alt="" />
+<Image src="/Service.png" width={100} height={100} alt="" />
 </Stack>
 <Typography textAlign="center" >Market Forecasting</Typography>
 <Typography textAlign="center" >Market-leading experience and services</Typography>
@@ -281,7 +281,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Service} width={100} alt="" />
+<Image src="/Service.png" width={100} height={100} alt="" />
 </Stack>
 <Typography textAlign="center" >Market Forecasting</Typography>
 <Typography textAlign="center" >Market-leading experience and services</Typography>
@@ -319,7 +319,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Homes} width={365} height={330} alt="" />
+    <Image src="/Homes.jpg" width={365} height={330} alt="" />
 </Stack>
 
   </Box>
@@ -331,7 +331,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Homes} width={365} height={330} alt="" />
+    <Image src="/Homes.jpg" width={365} height={330} alt="" />
 </Stack>
 
   </Box>
@@ -343,7 +343,7 @@ direction={{xs: "column", md: "row"}}
  
 >
 
-    <Image src={Homes} width={365} height={330} alt="" />
+    <Image src="/Homes.jpg" width={365} height={330} alt="" />
 </Stack>
 
   </Box>
@@ -370,20 +370,20 @@ Meet the financial and marketing specialists.</Typography>
   alignItems="center">
     <Box>
 
-  <Image src={Staff}  width={300} height={300}  alt="" />
+  <Image src="/Staff.png"  width={300} height={300}  alt="" />
   <Typography mt={5} textAlign="center">Steven Monroe</Typography>
   <Typography textAlign="center">Marketing & Advertising</Typography>
     </Box>
   
     <Box>
 
-<Image src={Staff}  width={300} height={300}  alt="" />
+<Image src="/Staff.png"  width={300} height={300}  alt="" />
 <Typography mt={5} textAlign="center">Steven Monroe</Typography>
   <Typography textAlign="center">Marketing & Advertising</Typography>
   </Box>
   <Box>
 
-  <Image src={Staff}  width={300} height={300}  alt="" />
+  <Image src="/Staff.png"  width={300} height={300}  alt="" />
   <Typography mt={5} textAlign="center">Steven Monroe</Typography>
   <Typography textAlign="center">Marketing & Advertising</Typography>
     </Box>
@@ -400,7 +400,7 @@ Meet the financial and marketing specialists.</Typography>
         >
           <Box   
           maxWidth={{ md: "55vw" }}  width="100%">
-            <Image src={Contact} alt="heroImage"  layout="responsive" />
+            <Image src="/Contact.jpg" width={700} height={600} alt="heroImage"   />
           </Box>
           <Box  mt={-10} maxWidth={{ md: "43.54vw" }}>
             <Typography  textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
@@ -462,11 +462,11 @@ laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</Typography>
   mt={10}
   mb={5}
   >
-<Image src={Client} width={150} height={100} alt="" />
-<Image src={Client} width={150} height={100} alt="" />
-<Image src={Client} width={150} height={100} alt="" />
-<Image src={Client} width={150} height={100} alt="" />
-<Image src={Client} width={150} height={100} alt="" />
+<Image src="/Client.png" width={150} height={100} alt="" />
+<Image src="/Client.png" width={150} height={100} alt="" />
+<Image src="/Client.png" width={150} height={100} alt="" />
+<Image src="/Client.png" width={150} height={100} alt="" />
+
   </Stack>
   
 <Footer />
