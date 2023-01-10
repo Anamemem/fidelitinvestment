@@ -15,14 +15,7 @@ export default function Testimonial() {
   alignItems="center"
   mt={20}>
     
-    <Typography  textAlign="center" variant='h4'>Testimonials</Typography>
-
-    <Typography textAlign="center"> 
-     Testimonials from customers who are satisfied 
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.</Typography>
-
-
+    <Typography  textAlign="center" variant='h4'>OUR PRODUCTS AND FEATURES</Typography>
   </Stack>
   <Stack
   direction={{xs: "column", md: "row"}}
@@ -33,53 +26,70 @@ used in marketing for as long as marketing exists.</Typography>
 
 
 <Box>  
-    <Stack justifyContent="center"
+    {/* <Stack justifyContent="center"
   alignItems="center">
 
     <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
-  </Stack>
+  </Stack> */}
+<Typography textAlign="center" >SILVER PLAN <br />$500.00-$5,999.00</Typography>
+    <Typography mt={2} textAlign="left">*Minimumamount:$300.00<br />
+     *Maximum amount:$5,999.00<br />
+*ROI Model:5.5% Weekly Profit<br />
+*Referral commission:10.00% <br />
+on referred user first deposit only <br />
+  *Personal account manager<br />
+*Full access over your money</Typography>
 
-    <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.<br />
-Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.</Typography>
-<Typography textAlign="center" mt={5}>Chris Doe</Typography>
 
 </Box>
 <Box>  
-    <Stack justifyContent="center"
+     {/* <Stack justifyContent="center"
   alignItems="center">
 
     <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
-  </Stack>
-
-    <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.<br />
-Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.</Typography>
-<Typography textAlign="center" mt={5}>Chris Doe</Typography>
-
+  </Stack> */}
+<Typography textAlign="center" >GOLD PLAN <br />$6,000.00-$19,999.00</Typography>
+    <Typography mt={2} textAlign="left">*Minimumamount:$6,000.00<br />
+     *Maximum amount:$19,999.00<br />
+*ROI Model:6.8% Weekly Profit<br />
+*Referral commission:10.00% <br />
+on referred user first deposit only <br />
+  *Personal account manager<br />
+*Full access over your money</Typography>
 </Box>
 <Box>  
-    <Stack justifyContent="center"
+    {/* <Stack justifyContent="center"
   alignItems="center">
 
     <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
-  </Stack>
+  </Stack> */}
+<Typography textAlign="center" >DIAMOND PLAN <br />$20,000.00-$50,000.00</Typography>
+    <Typography mt={2} textAlign="left">*Minimumamount:$20,000.00<br />
+     *Maximum amount:$50,000.00<br />
+*ROI Model:7.2% Weekly Profit<br />
+*Referral commission:10.00% <br />
+on referred user first deposit only <br />
+  *Personal account manager<br />
+*Full access over your money</Typography>
 
-    <Typography mt={2} textAlign="center"> Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.<br />
-Testimonials from customers who are satisfied <br />
-     with services that have been effectively<br />
-used in marketing for as long as marketing exists.</Typography>
-<Typography textAlign="center" mt={5}>Chris Doe</Typography>
+</Box>  
+<Box>  
+    {/* <Stack justifyContent="center"
+  alignItems="center">
 
-</Box>  </Stack>
+    <Image src="/Avatar.jpg" width={100} height={100} style={{borderRadius: "50px"}} alt="" />
+  </Stack> */}
+<Typography textAlign="center" >PREMIUM <br />$60,000.00-$100,000.00</Typography>
+    <Typography mt={2} textAlign="left">*Minimumamount:$60,000.00<br />
+     *Maximum amount:$100,000.00<br />
+*ROI Model:8.4% Weekly Profit<br />
+*Referral commission:10.00% <br />
+on referred user first deposit only <br />
+  *Personal account manager<br />
+*Full access over your money</Typography>
+
+</Box>
+</Stack>
 </>
 
 
