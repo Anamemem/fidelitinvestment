@@ -1,13 +1,13 @@
 import { Grid, Box, Typography, Stack, Card  } from "@mui/material";
 import PersistentDrawerLeft from "../../component/user/drawer"
 import SalesChart from "../../component/user/chart"
-import Topbar from "../../component/user/topbar"
+// import Topbar from "../../component/user/topbar"
 // import Header from "../../component/user/header"
-import Avatar from '@mui/material/Avatar';
-import Link from "next/link"
-import FcBarChart from "react-icons/fc"
+// import Avatar from '@mui/material/Avatar';
+// import Link from "next/link"
+// import FcBarChart from "react-icons/fc"
 import Image from 'next/image'
-import CabinIcon from '@mui/icons-material/Cabin';
+// import CabinIcon from '@mui/icons-material/Cabin';
 import AddToPhotosIcon from '@mui/icons-material/AddToPhotos';
 import ApprovalIcon from '@mui/icons-material/Approval';
 import ApartmentIcon from '@mui/icons-material/Apartment';
@@ -20,7 +20,7 @@ import ForwardIcon from '@mui/icons-material/Forward';
 
 // import Card from "@mui/material/Card"
 import CardContent from '@mui/material/CardContent';
-import { CardActionArea } from '@mui/material';
+// import { CardActionArea } from '@mui/material';
 
 
 export default function UserDashboard() {
