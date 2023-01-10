@@ -14,6 +14,7 @@ import Staff from "../public/staff.png"
 // import DrawerAppBar from "../component/majAppbar"
 import ElevationScroll from "../component/minAppbar"
 import Footer from "../component/footer"
+import Footer2 from "../component/footer2"
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 
@@ -39,9 +40,9 @@ export default function Home() {
   alignItems="center"
   mt={10}>
     
-    <Typography variant='h4'>We Are Invetex...</Typography>
+    <Typography variant='h4' sx={{fontFamily: "Quicksand"}}>We Are Invetex...</Typography>
 
-    <Typography textAlign="center">First U.S. institutional asset manager focused exclusively on blockchain technology.<br />
+    <Typography textAlign="center" sx={{fontFamily: "Quicksand"}}>First U.S. institutional asset manager focused exclusively on blockchain technology.<br />
 Since 2013, sterling Assets has invested in digital assets, agriculture and blockchain<br />
  companies, providing investors with the full spectrum of exposure to the space..</Typography>
   </Stack>
@@ -114,9 +115,10 @@ direction={{xs: "column", md: "row"}}
   mt={20}
   p={5}>
     
-    <Typography  textAlign="center" variant='h4'>WHO WAS STERLING ASSETS CREATED FOR?</Typography>
+    <Typography fontSize={{xs: "20px", md: "40px"}} style={{fontWeight: "500"}}
+      textAlign="center" variant='h4' sx={{fontFamily: "Quicksand"}}>WHO WAS STERLING ASSETS CREATED FOR?</Typography>
 
-    <Typography textAlign="center">Economic services provided by the finance industry, which encompasses a broad<br />
+    <Typography textAlign="center" sx={{fontFamily: "Quicksand"}}>Economic services provided by the finance industry, which encompasses a broad<br />
 range of businesses that manage money, including credit unions.</Typography>
   </Stack>
 
@@ -134,7 +136,7 @@ range of businesses that manage money, including credit unions.</Typography>
     <Typography mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>01</Typography>
 
 
-<Typography  >For individuals successfully operating<br/> in the
+<Typography sx={{fontFamily: "Quicksand"}} >For individuals successfully operating<br/> in the
    field of investment, economics,<br /> business and finance,
    who want to<br /> create a zone of support, mentoring<br />
   
@@ -147,8 +149,8 @@ range of businesses that manage money, including credit unions.</Typography>
    <Image src="/Home2.jpg" width={300}  height="250"  alt="/" />
    <Typography mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>02</Typography>
 
-<Typography  >For entrepreneurs developing their<br/>
-   own business who want to broaden their <br />knowledge of personal 
+<Typography sx={{fontFamily: "Quicksand"}}  >For entrepreneurs developing their
+   own<br /> business who want to broaden their <br />knowledge of personal 
   finance and investments 
   </Typography>
   </Box>
@@ -157,7 +159,7 @@ range of businesses that manage money, including credit unions.</Typography>
   <Image src="/Home3.jpg" width={300}  height="250"  alt="/" />
   <Typography  mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>03</Typography>
 
-<Typography  >For individuals interested in building their<br /> own financial independence,
+<Typography sx={{fontFamily: "Quicksand"}} >For individuals interested in building their<br /> own financial independence,
    and entrepreneurs <br/>
     hoping to start a business but have inadequate fund for a startup</Typography>
   </Box>
@@ -245,64 +247,47 @@ direction={{xs: "column", md: "row"}}
 
 
 <Stack
-  direction={{xs: "column", md: "row"}}
-  justifyContent="center"
-  alignItems="center"
-  spacing={0}
- mt={10}
->
-  <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "23%"}} pt={12} pb={14}
-  >
- 
-<Typography textAlign="center" variant="h4"  px={2}>HOW IT WORKS</Typography>
-<Typography textAlign="center" px={2}>Get Started in minutes<br />
+          px={{ xs: "4.80vw", md: "0" }}
+          pl={{ md: "2.78vw" }}
+          direction={{ xs: "column-reverse", md: "row" }}
+          alignItems={"center"}
+          mt={{xs: "10px"}}
+          // justifyContent={{xs:"flex-start",}}
+          spacing={{ xs: "0.00vw", md: "3.99vw" }}
+        >
+          <Box   maxWidth={{ md: "43.54vw" }}>
+            <Typography  style={{fontFamily: "Quicksand", fontWeight: "500"}}
+             fontSize={{xs:"38px", sm:"60px", md:"5.25vw"}} variant="h1">
+            Invest in what <br />
+           you believe in.
+            </Typography>
+            <Typography mt={2}  style={{fontFamily: "Quicksand", fontWeight: "500"}}
+             fontSize={{xs:"28px", sm:"40px", md:"2.25vw"}} variant="h4">OUR ACTIVITIES
 </Typography>
-<Stack  alignItems="center" justifyContent="center">
-<Box width={80} sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 2 }}>
-<Button href="/signup" sx={{color: '#fff', textAlign: 'center'}}>Sign Up</Button>
-</Box>
-</Stack>
-   {/* <Typography px={2}>View All Works</Typography>
-  */}
-  </Box>
-  <Box  width={{xs:"100%", md: "27%"}} style={{backgroundImage: `url('/Homes.jpg)`}} >
-    <Stack
-direction={{xs: "column", md: "row"}}
-  justifyContent="center"
-  alignItems="center"   
-  sx={{backgroundImage: `url('/Homes.jpg)`}}
->
-ff
-    {/* <Image src="/Homes.jpg" width={365} height={330} alt="" /> */}
-</Stack>
+<Typography sx={{fontFamily: "Quicksand"}}>Training, seminars and workshops in two main streams - personal finance and investing as well as
+    entrepreneurship and developing your own business using the latest trends and expert knowledge</Typography>
+    <Typography mt={5} sx={{fontFamily: "Quicksand"}}>Consultations with a permanent group of experts of the Club , during which project
+       participants will have the opportunity to gain knowledge about the financial market and  the possibility of investing savings 
+      through investments on the stock exchange and in other areas such as real estate, luxury goods, art market</Typography>
+           
 
-  </Box>
-   <Box  width={{xs:"100%", md: "25%"}}  >
-    <Stack
-  direction="row"
-  justifyContent="center"
-  alignItems="center"
- 
->
-
-    <Image src="/Homes.jpg" width={365} height={330} alt="" />
-</Stack>
-
-  </Box>
-   <Box  width={{xs:"100%", md: "25%"}}  >
-    <Stack
-  direction="row"
-  justifyContent="center"
-  alignItems="center"
- 
->
-
-    <Image src="/Homes.jpg" width={365} height={330} alt="" />
-</Stack>
-
-  </Box>
-</Stack>
-<Stack
+            <Stack
+              direction="row"
+              my={{ xs: "14px", sm: "22px", md: "2.29vw" }}
+              px={{xs:"50px", sm:"80px", md:"8.33vw"}}
+              flexWrap={"wrap"}
+              alignItems="center"
+              spacing={{ xs: "4px", sm: "7px", md: "10px" }}
+            >
+              
+            </Stack>
+          </Box>
+          <Box pl={{md:"6.60vw"}}  sx={{display: {xs: "none", md: "block"} }}
+          maxWidth={{ md: "50.54vw" }}  width="100%">
+            <Image src="/productImg4.jpg" alt="heroImage" width={665} height={550} />
+          </Box>
+        </Stack>
+        {/* <Stack
   direction={{xs: "column"}}
   justifyContent="center"
   alignItems="center"
@@ -342,8 +327,8 @@ Meet the financial and marketing specialists.</Typography>
   <Typography textAlign="center">Marketing & Advertising</Typography>
     </Box>
 
-  </Stack>
-  <Stack
+  </Stack> */}
+  {/* <Stack
          
           direction={{ xs: "column", md: "row" }}
           alignItems={"center"}
@@ -393,18 +378,18 @@ Meet the financial and marketing specialists.</Typography>
            </Stack>
            
           </Box>
-        </Stack>
+        </Stack> */}
         <Stack
   direction={{xs: "column"}}
   justifyContent="center"
   alignItems="center"
   mt={20}>
     
-    <Typography  textAlign="center" variant='h4'>Our Clients</Typography>
+    <Typography  textAlign="center" variant='h4'>Our Goals</Typography>
 
     <Typography textAlign="center"> 
-    Perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque<br />
-laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</Typography>
+    Educating through access to the latest knowledge, contact< br/> with experts and
+    creating space for learning,integration,exchange of experiences and establishing relationships.</Typography>
 
 
   </Stack>
@@ -412,18 +397,20 @@ laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</Typography>
   direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
-  spacing={10}
+  spacing={5}
+  textAlign="center"
   mt={10}
   mb={5}
   >
-<Image src="/Client.png" width={150} height={100} alt="" />
-<Image src="/Client2.png" width={150} height={100} alt="" />
-<Image src="/Client3.png" width={150} height={100} alt="" />
-<Image src="/Client4.png" width={150} height={100} alt="" />
+<Typography sx={{fontFamily: "Quicksand"}}>Inspiring individuals to actively make decisions in <br />areas of investing and securing the future.</Typography>
+<Typography sx={{fontFamily: "Quicksand"}}>Supporting individual's enterpreneurship and <br />developing competence in safe investing and running a business.</Typography>
+<Typography sx={{fontFamily: "Quicksand"}}>Creating a safe space for learning, integration, exchange of<br /> experiences and establishing professional and personal relationships.</Typography>
+{/* <Typography sx={{fontFamily: "Quicksand"}}>Creating a safe<br /> investment platform for individuals and institutions.</Typography> */}
+<Typography sx={{fontFamily: "Quicksand"}}>Inspiring individuals to actively make decisions in the  <br />area of investing and securing the future.</Typography>
 
   </Stack>
   
-<Footer />
+<Footer2 />
     </>
   )
 }

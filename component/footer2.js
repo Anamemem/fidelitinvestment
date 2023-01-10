@@ -3,19 +3,19 @@ import { Box, Stack, Typography } from "@mui/material"
 import logoImg from "../public/logoImg.jpg"
 
 
-export default function Footer() {
+export default function Footer2() {
   return (
     <Box
       mt={{ xs: "20px", sm: "32px", md: "45px" }}
-      bgcolor="#27292D"
+      bgcolor="#424242"
       color="white"
       position={"relative"}
     >
       <Box
-        style={{
-          backgroundImage: `url('${logoImg.src}')`,
-          backgroundSize: "cover",
-        }}
+        // style={{
+        //   backgroundImage: `url('${logoImg.src}')`,
+        //   backgroundSize: "cover",
+        // }}
       >
         <Stack
           position={"absolute"}
@@ -35,7 +35,7 @@ export default function Footer() {
           >
             <Box height={{ xs:"16px", sm:"25px", md:"2.64vw" }} maxWidth={{ xs:"59px", sm:"94px", md:"9.86vw" }}>
               <Image
-                src={logo}
+                src={logoImg}
                 alt="logo_image"
                 layout="responsive"
                 width="142"
