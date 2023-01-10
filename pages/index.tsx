@@ -41,8 +41,9 @@ export default function Home() {
     
     <Typography variant='h4'>We Are Invetex...</Typography>
 
-    <Typography textAlign="center">Economic services provided by the finance industry, which encompasses a broad<br />
-range of businesses that manage money, including credit unions.</Typography>
+    <Typography textAlign="center">First U.S. institutional asset manager focused exclusively on blockchain technology.<br />
+Since 2013, sterling Assets has invested in digital assets, agriculture and blockchain<br />
+ companies, providing investors with the full spectrum of exposure to the space..</Typography>
   </Stack>
 
   <Stack
@@ -61,11 +62,11 @@ range of businesses that manage money, including credit unions.</Typography>
   mt={10}
 >
 
-    <Image src="/Service.png" width={100} height={100} alt="" />
+    <Image src="/service_04.png" width={150} height={120} alt="" />
 </Stack>
-<Typography textAlign="center" >Market Forecasting</Typography>
-<Typography textAlign="center" >Market-leading experience and services</Typography>
-<Typography textAlign="center" >Preparation of detailed company <br />
+<Typography textAlign="center" style={{fontWeight: "600"}} mt={-3} >Market Forecasting</Typography>
+<Typography textAlign="center" mt={2} mb={2} style={{color: "lightgray"}} >Market-leading experience and services</Typography>
+<Typography textAlign="center" style={{color: "#757575"}} >Preparation of detailed company <br />
   specific models used for decision <br />
   making purposes</Typography>
   </Box>
@@ -78,12 +79,12 @@ direction={{xs: "column", md: "row"}}
   mt={10}
 >
 
-    <Image src="/Service.png" width={100} height={100} alt="" />
+    <Image src="/service_05.png" width={150} height={120} alt="" />
 </Stack>
-<Typography textAlign="center" >Market Forecasting</Typography>
-<Typography textAlign="center" >Market-leading experience and services</Typography>
-<Typography textAlign="center" >Preparation of detailed company <br />
-  specific models used for decision <br />
+<Typography textAlign="center" style={{fontWeight: "600"}} mt={-3} >Financial Modeling</Typography>
+<Typography textAlign="center" mt={2} mb={2} style={{color: "lightgray"}} >Market-leading experience and services</Typography>
+<Typography textAlign="center"  style={{color: "#757575"}} >Preparation of detailed company<br />
+ specific models used for decision<br />
   making purposes</Typography>
   </Box>
    <Box >
@@ -95,13 +96,13 @@ direction={{xs: "column", md: "row"}}
   mt={10}
 >
 
-    <Image src={Service} width={100} alt="" />
+    <Image src="/service_06.png" width={150} height={120} alt="" />
 </Stack>
-<Typography textAlign="center" >Market Forecasting</Typography>
-<Typography textAlign="center" >Market-leading experience and services</Typography>
-<Typography textAlign="center" >Preparation of detailed company <br />
-  specific models used for decision <br />
-  making purposes</Typography>
+<Typography textAlign="center" style={{fontWeight: "600"}} mt={-3} >Financial Analysis</Typography>
+<Typography textAlign="center" mt={2} mb={2} style={{color: "lightgray"}} >Market-leading experience and services</Typography>
+<Typography textAlign="center"  style={{color: "#757575"}} >Assessment of viability, stability and
+<br /> profitability
+ of a business,<br /> sub-business or project</Typography>
   </Box>
 </Stack>
 
@@ -113,7 +114,7 @@ direction={{xs: "column", md: "row"}}
   mt={20}
   p={5}>
     
-    <Typography  textAlign="center" variant='h4'>Profitable Investments</Typography>
+    <Typography  textAlign="center" variant='h4'>WHO WAS STERLING ASSETS CREATED FOR?</Typography>
 
     <Typography textAlign="center">Economic services provided by the finance industry, which encompasses a broad<br />
 range of businesses that manage money, including credit unions.</Typography>
@@ -123,108 +124,56 @@ range of businesses that manage money, including credit unions.</Typography>
   direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
-  spacing={8}
-  mt={10}
+  spacing={10}
+  mt={-3}
   p={12}
 >
   <Box >
 
     <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
+    <Typography mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>01</Typography>
 
-<Typography  >Market Forecasting</Typography>
-<Typography  >Market-leading experience and services</Typography>
-<Typography >Preparation of detailed company <br />
-  specific models used for decision <br />
-  making purposes</Typography>
+
+<Typography  >For individuals successfully operating<br/> in the
+   field of investment, economics,<br /> business and finance,
+   who want to<br /> create a zone of support, mentoring<br />
+  
+</Typography>
   </Box>
  
    
    <Box >
 
-   <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
+   <Image src="/Home2.jpg" width={300}  height="250"  alt="/" />
+   <Typography mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>02</Typography>
 
-<Typography  >Market Forecasting</Typography>
-<Typography  >Market-leading experience and services</Typography>
-<Typography >Preparation of detailed company <br />
-  specific models used for decision <br />
-  making purposes</Typography>
+<Typography  >For entrepreneurs developing their<br/>
+   own business who want to broaden their <br />knowledge of personal 
+  finance and investments 
+  </Typography>
   </Box>
   <Box >
 
-  <Image src="/Homes.jpg" width={300}  height="250"  alt="/" />
+  <Image src="/Home3.jpg" width={300}  height="250"  alt="/" />
+  <Typography  mt={-3} style={{fontSize: "30px", fontWeight: "600", color: "#795548"}}>03</Typography>
 
-<Typography  >Market Forecasting</Typography>
-<Typography  >Market-leading experience and services</Typography>
-<Typography >Preparation of detailed company <br />
-  specific models used for decision <br />
-  making purposes</Typography>
+<Typography  >For individuals interested in building their<br /> own financial independence,
+   and entrepreneurs <br/>
+    hoping to start a business but have inadequate fund for a startup</Typography>
   </Box>
  
 </Stack>
 </Box>
-<Stack
-         
-          direction={{ xs: "column", md: "row" }}
-          alignItems={"center"}
-        
-          // justifyContent={{xs:"flex-start",}}
-          spacing={{ xs: "0.00vw", md: "3.99vw" }}
-        >
-          <Box   
-          maxWidth={{ md: "50.54vw" }}  width="100%">
-            <Image src="/Big.jpg" alt="heroImage" width={700} height={600} />
-          </Box>
-          <Box   maxWidth={{ md: "43.54vw" }}>
-            <Typography   textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
-             fontSize={{xs:"28px", sm:"40px", md:"3.25vw"}} variant="h1">
-           We are always ahead<br />
-Professional solutions for your business.
 
-            </Typography>
 
-            <Typography textAlign="center" mt={5}>
-            We provide premium customer support and offer affiliate programs.
-            </Typography>
-
-            <Stack 
-            direction={{xs: "column", md: "row"}}
-             justifyContent="center"
-             spacing={10}
-             alignItems="center"
-             mt={10}>
-              <Box>
-
-              <Typography textAlign="center" variant='h3'>856</Typography>
-              <Typography textAlign="center">Satisfied client</Typography>
-              <Typography textAlign="center"> Market-leading<br /> experience</Typography>
-              </Box>
-              <Box>
-
-<Typography textAlign="center" variant='h3'>238</Typography>
-<Typography textAlign="center">Satisfied client</Typography>
-<Typography textAlign="center"> Market-leading<br /> experience</Typography>
-</Box>
-<Box>
-
-<Typography textAlign="center" variant='h3'>341</Typography>
-<Typography textAlign="center">Satisfied client</Typography>
-<Typography pb={5} textAlign="center"> Market-leading<br /> experience</Typography>
-</Box>
-             </Stack>
-           
-
-           
-          </Box>
-        </Stack>
-
-        <Stack
+        {/* <Stack
   direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"
   spacing={0}
   mt={-0.8}
   
->
+>     
   <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "27%"}} pt={10} pb={10}>
     <Stack
   direction="row"
@@ -289,7 +238,7 @@ direction={{xs: "column", md: "row"}}
   specific models used for decision <br />
   making purposes</Typography>
   </Box>
-</Stack>
+</Stack> */}
 
 
 <Testimonial />
@@ -305,21 +254,26 @@ direction={{xs: "column", md: "row"}}
   <Box style={{backgroundColor: "gray"}} width={{xs:"100%", md: "23%"}} pt={12} pb={14}
   >
  
-<Typography   px={2}> Our Gallery</Typography>
-<Typography  px={2}>View some of the most successful projects
-   and more by our specialists presented in this gallery.</Typography>
-   <Typography px={2}>View All Works</Typography>
- 
+<Typography textAlign="center" variant="h4"  px={2}>HOW IT WORKS</Typography>
+<Typography textAlign="center" px={2}>Get Started in minutes<br />
+</Typography>
+<Stack  alignItems="center" justifyContent="center">
+<Box width={80} sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 2 }}>
+<Button href="/signup" sx={{color: '#fff', textAlign: 'center'}}>Sign Up</Button>
+</Box>
+</Stack>
+   {/* <Typography px={2}>View All Works</Typography>
+  */}
   </Box>
-  <Box  width={{xs:"100%", md: "27%"}} >
+  <Box  width={{xs:"100%", md: "27%"}} style={{backgroundImage: `url('/Homes.jpg)`}} >
     <Stack
 direction={{xs: "column", md: "row"}}
   justifyContent="center"
   alignItems="center"   
- 
+  sx={{backgroundImage: `url('/Homes.jpg)`}}
 >
-
-    <Image src="/Homes.jpg" width={365} height={330} alt="" />
+ff
+    {/* <Image src="/Homes.jpg" width={365} height={330} alt="" /> */}
 </Stack>
 
   </Box>
@@ -394,13 +348,13 @@ Meet the financial and marketing specialists.</Typography>
           direction={{ xs: "column", md: "row" }}
           alignItems={"center"}
           mt={{xs: "60px"}}
-          
+         
           // justifyContent={{xs:"flex-start",}}
-          spacing={{ xs: "0.00vw", md: "3.99vw" }}
+        
         >
           <Box   
           maxWidth={{ md: "55vw" }}  width="100%">
-            <Image src="/Contact.jpg" width={700} height={600} alt="heroImage"   />
+            <Image src="/Gold.png" width={600} height={600} alt="heroImage"   />
           </Box>
           <Box  mt={-10} maxWidth={{ md: "43.54vw" }}>
             <Typography  textAlign="center" style={{fontFamily: "Raleway", fontWeight: "500"}}
@@ -463,9 +417,9 @@ laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore..</Typography>
   mb={5}
   >
 <Image src="/Client.png" width={150} height={100} alt="" />
-<Image src="/Client.png" width={150} height={100} alt="" />
-<Image src="/Client.png" width={150} height={100} alt="" />
-<Image src="/Client.png" width={150} height={100} alt="" />
+<Image src="/Client2.png" width={150} height={100} alt="" />
+<Image src="/Client3.png" width={150} height={100} alt="" />
+<Image src="/Client4.png" width={150} height={100} alt="" />
 
   </Stack>
   

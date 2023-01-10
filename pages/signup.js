@@ -6,12 +6,13 @@ import Stack from '@mui/material/Stack';
 import Image from 'next/image';
 import Link from 'next/link'
 import ElevationScroll from "../component/minAppbar"
+import MultipleSelectCheckmarks from "../component/dropdown"
 
 
 export default function Register() {
     return ( <>
     <ElevationScroll />
-    <Box px={{xs:"16px",md:0}} sx={{backgroundColor:"#424242"}} height="100vh">
+    <Box px={{xs:"16px",md:0}} sx={{backgroundColor:"#424242"}} height="100%">
       <Grid container mt={{md:"3.33vw"}}>
        <Grid item xs={12} md={12} mt={{xs:"12.00vw", md:"4.17vw"}} sx={{ mx: "auto", textAlign: "center" }}>
        <Typography variant='h4'
@@ -27,6 +28,22 @@ export default function Register() {
             </Typography>
             <Stack width={"100%"} maxWidth={{   md: "32.22vw" }} mx="auto" 
           spacing={{xs:"6.00vw", md:"0.08vw"}} sx={{ mt:{xs:"4.00vw", md:"1.39vw"}, }}>
+             <Box 
+             py={{xs:"1.40vw", md:"1.04vw"}}
+             px={{xs:"3.00vw", md:"1.74vw"}}
+                //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
+                //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
+                >
+                     <TextField fullWidth label="First Name" id="fullWidth" style={{borderRadius: 5}}/>
+                </Box>
+                <Box 
+             py={{xs:"1.40vw", md:"1.04vw"}}
+             px={{xs:"3.00vw", md:"1.74vw"}}
+                //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
+                //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
+                >
+                     <TextField fullWidth label="Last Name" id="fullWidth" style={{borderRadius: 5}}/>
+                </Box>
              <Box 
              py={{xs:"1.40vw", md:"1.04vw"}}
              px={{xs:"3.00vw", md:"1.74vw"}}
@@ -58,6 +75,30 @@ export default function Register() {
                 //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
                 >
                      <TextField fullWidth label="Confirm Password" id="fullWidth" />
+                </Box>
+                <Box 
+             py={{xs:"1.40vw", md:"1.04vw"}}
+             px={{xs:"3.00vw", md:"1.74vw"}}
+                //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
+                //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
+                >
+                     <TextField fullWidth label="Phone Number" id="fullWidth" style={{borderRadius: 5}}/>
+                </Box>
+                <Box 
+             py={{xs:"1.40vw", md:"1.04vw"}}
+             px={{xs:"3.00vw", md:"3.74vw"}}
+                //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
+                //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
+                >
+                     <MultipleSelectCheckmarks />
+                </Box>
+                <Box 
+             py={{xs:"1.40vw", md:"1.04vw"}}
+             px={{xs:"3.00vw", md:"1.74vw"}}
+                //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
+                //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
+                >
+                     <TextField fullWidth label="Referral code" id="fullWidth" style={{borderRadius: 5}}/>
                 </Box>
                 <Box alignItems="center" justifyContent="center"
              py={{xs:"1.40vw", md:"1.04vw"}}
