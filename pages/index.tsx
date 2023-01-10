@@ -5,18 +5,18 @@ import { Inter } from '@next/font/google'
 import Slideshow from "../component/slideShow" 
 import Testimonial from "../component/testimonial" 
 import {  Stack, Typography, Box } from '@mui/material';  
-import Service from "../public/Service.png"
-import Homes from "../public/Homes.jpg"
-import Big from "../public/Big.jpg"
-import Client from "../public/client.png"
-import Contact from "../public/contact.jpg"
-import Staff from "../public/staff.png"
+// import Service from "../public/Service.png"
+// import Homes from "../public/Homes.jpg"
+// import Big from "../public/Big.jpg"
+// import Client from "../public/client.png"
+// import Contact from "../public/contact.jpg"
+// import Staff from "../public/staff.png"
 // import DrawerAppBar from "../component/majAppbar"
 import ElevationScroll from "../component/minAppbar"
-import Footer from "../component/footer"
+// import Footer from "../component/footer"
 import Footer2 from "../component/footer2"
-import TextField from '@mui/material/TextField'
-import Button from '@mui/material/Button'
+// import TextField from '@mui/material/TextField'
+// import Button from '@mui/material/Button'
 
 
 const inter = Inter({ subsets: ['latin'] })

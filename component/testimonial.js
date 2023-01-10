@@ -1,5 +1,5 @@
 import {Stack,  Grid, Typography, Box } from '@mui/material';
-import Avatar from '../public/Avatar.jpg';
+// import Avatar from '../public/Avatar.jpg';
 import Image from 'next/image'
 import React from 'react';
 import Link from "next/link"
