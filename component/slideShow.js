@@ -39,9 +39,9 @@ export default function Slideshow() {
           <div  style={{'backgroundImage': `url(${slideImage.url})`,backgroundSize:"cover", backgroundRepeat: "no-repeat",
           minHeight: 'calc(100vh - 64px)'}}
            className="each-slide nin" key={index}>
-          <Typography textAlign="center"  style={{color: "white"}} fontSize={{xs: "15px" ,md: "50px"}}
+          <Typography textAlign="center"  style={{color: "white", fontFamily: "Quicksand"}} fontSize={{xs: "15px" ,md: "50px"}}
           pt={{xs: "200px", md: "300px"}}>{slideImage.caption}</Typography>
-          <Typography textAlign="center"  style={{color: "white"}}>{slideImage.caption2}</Typography>
+          <Typography textAlign="center"  style={{color: "white", fontFamily: "Quicksand"}}>{slideImage.caption2}</Typography>
           </div>
         ))} 
       </Zoom>

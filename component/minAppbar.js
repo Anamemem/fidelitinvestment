@@ -54,7 +54,7 @@ export default function ElevationScroll(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' } }}
           >
-            INVETEX
+            Sterling assests
           </Typography>
           <IconButton
             color="inherit"
@@ -67,7 +67,7 @@ export default function ElevationScroll(props) {
           </IconButton>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: 2, }} >
             {navItems.map((item) => (
-              <Button key={item} sx={{color: "white"}}>
+              <Button key={item} sx={{color: "white", fontFamily: "Quicksand"}}>
                 {item}
               </Button>
             ))}
