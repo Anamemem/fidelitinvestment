@@ -15,8 +15,7 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 import ForwardIcon from '@mui/icons-material/Forward';
-// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import MultipleSelectCheckmarks from "../../component/user/dropdown"
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 // import {Box,Stack,Button} from '@mui/material';
@@ -27,7 +26,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import { CardActionArea } from '@mui/material';
 
 
-export default function UserDashboard() {
+export default function Account() {
     return ( 
     <>
   
@@ -102,7 +101,7 @@ variant="h5" >Dashboard</Typography>
       <Box style={{color: "#616161"}}>
   <FolderSpecialIcon />
       </Box>
-      <Link href="/user/account">
+  <Link href="/user/account">
 
 <Typography 
         style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
@@ -122,7 +121,7 @@ variant="h5" >Dashboard</Typography>
 
     </Box>
   </Grid>
-    <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
+  <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
   >
   
 
@@ -134,29 +133,47 @@ variant="h5" >Dashboard</Typography>
               style={{fontWeight: "700", color: "black",fontFamily: "Quicksand"
               }}
               > 
-              Invest</Typography>
+               Our wallet address</Typography>
+
+
+
+               <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+               <Typography textAlign="center" justifyContent="center">USDT</Typography>
+               <Typography textAlign="center" fontSize={{xs: "10px", md: "18px"}} sx={{fontFamily: "Rowdies"}} mt={3}>TABpCATpfNtKa7PgRTKLL5LAHjzo626i8V</Typography>
+
+               </Box>
     
-   
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Your name"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Email"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Enter your deposit wallet address"  />
-    
+
+
+
+               <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+               <Typography textAlign="center" justifyContent="center">BTC</Typography>
+               <Typography textAlign="center" fontSize={{xs: "10px", md: "18px"}} sx={{fontFamily: "Rowdies"}} mt={3}>bc1qa8zhvxpljem6syffqnzx5wqjhrawl2ta0a60v6</Typography>
+
+               </Box>
+             
+
+
+
+               <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+               <Typography textAlign="center" justifyContent="center">ETH</Typography>
+               <Typography textAlign="center" fontSize={{xs: "8px", md: "18px"}} sx={{fontFamily: "Rowdies"}} mt={3}>0x85194D215962f23fc44344A7632D346500c49625</Typography>
+
+             </Box>
+
+
+             <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+               <Typography textAlign="center" justifyContent="center">Notice</Typography>
+               <Typography textAlign="center" fontSize={{xs: "10px", md: "18px"}} sx={{fontFamily: "Rowdies"}} mt={3}>All transactions are received by
+                the organization designated wallet address</Typography>
+
+               </Box>
+
 
       
   </Stack>
 
-  <Stack
-  direction="row"
-  justifyContent="center"
-  alignItems="center"
-  spacing={2}
-  mt={5}
-><Button s sx={{ fontSize: { sm: "14px", md: "25px" } }}
-                variant="contained">Confirm</Button>
-                </Stack>
+ 
                 
 
   </Grid>

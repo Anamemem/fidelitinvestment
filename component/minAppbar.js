@@ -13,11 +13,11 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Link from "next/link"
 
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'ABOUT US', 'CONTACT US',  'LOGIN', 'REGISTER'];
 
 export default function ElevationScroll(props) {
   const { window } = props;
@@ -27,19 +27,19 @@ export default function ElevationScroll(props) {
     setMobileOpen((prevState) => !prevState);
   };
 
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  // const drawer = (
+  //   <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+  //     <List>
+  //       {navItems.map((item) => (
+  //         <ListItem key={item} disablePadding>
+  //           <ListItemButton sx={{ textAlign: 'center' }}>
+  //             <ListItemText primary={item} />
+  //           </ListItemButton>
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
@@ -65,13 +65,27 @@ export default function ElevationScroll(props) {
           >
             <MenuIcon />
           </IconButton>
+          
           <Box sx={{ display: { xs: 'none', sm: 'block' }, borderRadius: 2, }} >
-            {navItems.map((item) => (
-              <Button key={item} sx={{color: "white", fontFamily: "Quicksand"}}>
-                {item}
-              </Button>
-            ))}
+          <Stack direction="row" spacing={3}>
+          <Link href="/">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500"}}>HOME</Typography>
+          </Link>
+          <Link href="/about">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500"}}>ABOUT US</Typography>
+          </Link>
+          <Link href="/contact">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500"}}>CONTACT US</Typography>
+          </Link>
+          <Link href="/login">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500"}}>LOGIN</Typography>
+          </Link>
+          <Link href="/signup">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500"}}>REGISTER</Typography>
+          </Link>
+          </Stack>
           </Box>
+
         </Toolbar>
       </AppBar>
       <Box component="nav">
@@ -88,7 +102,23 @@ export default function ElevationScroll(props) {
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >
-          {drawer}
+          <Stack direction="column" spacing={3} alignItems="center">
+          <Link href="/">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}>HOME</Typography>
+          </Link>
+          <Link href="/about">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}>ABOUT US</Typography>
+          </Link>
+          <Link href="/contact">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}>CONTACT US</Typography>
+          </Link>
+          <Link href="/login">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}>LOGIN</Typography>
+          </Link>
+          <Link href="/signup">
+            <Typography style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}>REGISTER</Typography>
+          </Link>
+          </Stack>
         </Drawer>
       </Box>
       {/* <Box component="main" sx={{ p: 3 }}>
