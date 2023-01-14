@@ -29,11 +29,12 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function UserDashboard() {
     return ( 
     <>
-  
+  <Box sx={{display: {xs: "block", md: "none"} }}>
+      <PersistentDrawerLeft />
+      </Box>
     <Grid container  height={{xs: "100vh", md: "100vh"}} >
    
-  <Grid item xs={2} >
-     <PersistentDrawerLeft />
+  <Grid item xs={2} sx={{display: {xs: "none", md: "block"} }} >
      <Stack spacing={0}  mt={-5} px={1} direction="row">
     <Image src="/logoImg.jpg" width={200} height={200} alt="logo" />
       </Stack>
@@ -110,7 +111,7 @@ variant="h5" >Dashboard</Typography>
 
     </Box>
   </Grid>
-  <Grid item   xs={10} style={{backgroundColor: "#e0e0e0"}} 
+  <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
   >
 
    <Stack direction={{xs: "column", md: "row"}} px={5} mt={5} spacing={50}>
@@ -144,14 +145,12 @@ variant="h5" >Dashboard</Typography>
    <Typography  gutterBottom variant="h5"
     fontSize={{ xs:"15px", sm:"20px", md:"1.11vw" }} 
     fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
-           Total users
+           Total Amount
    </Typography>
    <Typography  gutterBottom variant="h4" fontSize={{ xs:"14px", sm:"23px", md:"2.36vw" }} fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
 44,278
    </Typography>
-   <Typography >
-<span style={{color: "#2979ff"}}>5%</span> lastweek
-   </Typography>
+   
    </Stack>
    {/* <Box color="#2A569F" fontSize={{xs:"21px", sm:"33px", md:"3.47vw"}}>
   <FcBarChart />
@@ -173,14 +172,12 @@ variant="h5" >Dashboard</Typography>
    <Typography  gutterBottom variant="h5"
     fontSize={{ xs:"15px", sm:"20px", md:"1.11vw" }} 
     fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
-           Total Profit
+        Amount Invested
    </Typography>
    <Typography  gutterBottom variant="h4" fontSize={{ xs:"14px", sm:"23px", md:"2.36vw" }} fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
 $67,987
    </Typography>
-   <Typography  >
-<span style={{color: "#d500f9"}}>0.75%</span>Last 6 days
-   </Typography>
+  
    </Stack>
    <Box color="#2A569F" fontSize={{xs:"21px", sm:"33px", md:"3.47vw"}}>
   
@@ -202,14 +199,12 @@ $67,987
    <Typography  gutterBottom variant="h5"
     fontSize={{ xs:"15px", sm:"20px", md:"1.11vw" }} 
     fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
-           Total Expenses
+           Total Profit
    </Typography>
    <Typography  gutterBottom variant="h4" fontSize={{ xs:"14px", sm:"23px", md:"2.36vw" }} fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
 $76,965
    </Typography>
-   <Typography  >
-<span style={{color: "#76ff03"}}>0.9%</span>Last 9 days
-   </Typography>
+  
    </Stack>
    <Box color="#2A569F" fontSize={{xs:"21px", sm:"33px", md:"3.47vw"}}>
   
@@ -231,14 +226,12 @@ $76,965
    <Typography  gutterBottom variant="h5"
     fontSize={{ xs:"15px", sm:"20px", md:"1.11vw" }} 
     fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
-           Total cost
+     Refferal Amount
    </Typography>
    <Typography  gutterBottom variant="h4" fontSize={{ xs:"14px", sm:"23px", md:"2.36vw" }} fontWeight="400" lineHeight={{xs:"13px", sm:"20px", md:"2.08vw"}}>
 $59,765
    </Typography>
-   <Typography  >
-<span style={{color: "#ff9800"}}>0.6% </span>Last Year
-   </Typography>
+  
    </Stack>
    <Box color="#2A569F" fontSize={{xs:"21px", sm:"33px", md:"3.47vw"}}>
   

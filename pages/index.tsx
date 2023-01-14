@@ -40,7 +40,7 @@ export default function Home() {
   alignItems="center"
   mt={10}>
     
-    <Typography variant='h4' sx={{fontFamily: "Quicksand"}}>We Are Invetex...</Typography>
+    <Typography variant='h4' sx={{fontFamily: "Quicksand"}}>We Are Sterling assests...</Typography>
 
     <Typography textAlign="center" sx={{fontFamily: "Quicksand"}}>First U.S. institutional asset manager focused exclusively on blockchain technology.<br />
 Since 2013, sterling Assets has invested in digital assets, agriculture and blockchain<br />
@@ -387,14 +387,14 @@ Meet the financial and marketing specialists.</Typography>
     
     <Typography  textAlign="center" variant='h4'>Our Goals</Typography>
 
-    <Typography textAlign="center"> 
+    <Typography textAlign="center"  sx={{fontFamily: "Quicksand"}}> 
     Educating through access to the latest knowledge, contact< br/> with experts and
-    creating space for learning,integration,exchange of experiences and establishing relationships.</Typography>
+    creating space for learning,integration,exchange of experiences<br /> and establishing relationships.</Typography>
 
 
   </Stack>
   <Stack
-  direction={{xs: "column", md: "row"}}
+  direction={{xs: "column"}}
   justifyContent="center"
   alignItems="center"
   spacing={5}
@@ -402,11 +402,11 @@ Meet the financial and marketing specialists.</Typography>
   mt={10}
   mb={5}
   >
-<Typography sx={{fontFamily: "Quicksand"}}>Inspiring individuals to actively make decisions in <br />areas of investing and securing the future.</Typography>
-<Typography sx={{fontFamily: "Quicksand"}}>Supporting individual's enterpreneurship and <br />developing competence in safe investing and running a business.</Typography>
-<Typography sx={{fontFamily: "Quicksand"}}>Creating a safe space for learning, integration, exchange of<br /> experiences and establishing professional and personal relationships.</Typography>
+<Typography sx={{fontFamily: "Rowdies"}}>Inspiring individuals to actively make decisions in <br />areas of investing and securing the future.</Typography>
+<Typography sx={{fontFamily: "Rowdies"}}>Supporting individual's enterpreneurship and <br />developing competence in safe investing and running a business.</Typography>
+<Typography sx={{fontFamily: "Rowdies"}}>Creating a safe space for learning, integration, exchange of<br /> experiences and establishing professional and personal relationships.</Typography>
 {/* <Typography sx={{fontFamily: "Quicksand"}}>Creating a safe<br /> investment platform for individuals and institutions.</Typography> */}
-<Typography sx={{fontFamily: "Quicksand"}}>Inspiring individuals to actively make decisions in the  <br />area of investing and securing the future.</Typography>
+<Typography sx={{fontFamily: "Rowdies"}}>Inspiring individuals to actively make decisions in the  <br />area of investing and securing the future.</Typography>
 
   </Stack>
   
