@@ -131,66 +131,80 @@ export default function PersistentDrawerLeft() {
         style={{ height: "100vh"}}>
        <Stack spacing={1} px={2} direction="row">
     
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+       <Link href="/user">
+
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "400", color: "#616161"}}
+
+variant="h5" >Dashboard</Typography>
+    </Link>
+    </Stack>
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+
+      <Box style={{color: "#616161"}}>
+  <AddToPhotosIcon />
+      </Box>
+      <Link href="/user/invest">
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Invest</Typography>
+      </Link>
+    </Stack>
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+      <Box style={{color: "#616161"}}>
+  <ApprovalIcon />
+      </Box>
+      <Link href="/user/withdraw">
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Withdraw</Typography>
+ </Link>
+    </Stack>
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+      <Box style={{color: "#616161"}}>
+  <ApartmentIcon />
+      </Box>
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Loan/incentives</Typography>
+    </Stack>
     
-    variant="h4" >Dashboard</Typography>
-        </Stack>
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <AddToPhotosIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Invest</Typography>
-        </Stack>
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <ApprovalIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Withdraw</Typography>
-        </Stack>
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <ApartmentIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Loan/incentives</Typography>
-        </Stack>
-        
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <FamilyRestroomIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Refferals</Typography>
-        </Stack>
-    
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <FolderSpecialIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Accounts</Typography>
-        </Stack>
-        <Stack spacing={1}  mt={3} px={2} direction="row">
-          <Box style={{color: "#616161"}}>
-      <ForwardIcon />
-          </Box>
-    <Typography 
-            style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
-    
-     >Logout</Typography>
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+      <Box style={{color: "#616161"}}>
+  <FamilyRestroomIcon />
+      </Box>
+
+  <Link href="/user/refferals">
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Refferals</Typography>
+ </Link>
+    </Stack>
+
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+      <Box style={{color: "#616161"}}>
+  <FolderSpecialIcon />
+      </Box>
+      <Link href="/user/account">
+
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Accounts</Typography>
+ </Link>
+    </Stack>
+    <Stack spacing={1}  mt={3} px={2} direction="row">
+      <Box style={{color: "#616161"}}>
+  <ForwardIcon />
+      </Box>
+<Typography 
+        style={{fontFamily: "Quicksand", fontWeight: "500", color: "#616161"}}
+
+ >Logout</Typography>
         </Stack>
     
         </Box>

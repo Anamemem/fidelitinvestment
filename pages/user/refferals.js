@@ -15,8 +15,7 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 import ForwardIcon from '@mui/icons-material/Forward';
-// import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import MultipleSelectCheckmarks from "../../component/user/dropdown"
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 // import {Box,Stack,Button} from '@mui/material';
@@ -27,7 +26,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 // import { CardActionArea } from '@mui/material';
 
 
-export default function UserDashboard() {
+export default function Refferals() {
     return ( 
     <>
   
@@ -43,7 +42,6 @@ export default function UserDashboard() {
   <Box pt={2} sx={{display: {xs: "none", md: "block"} }}
   >
     <Stack spacing={1} px={2} direction="row">
-    
     <Link href="/user">
 
 <Typography 
@@ -122,7 +120,7 @@ variant="h5" >Dashboard</Typography>
 
     </Box>
   </Grid>
-    <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
+  <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
   >
   
 
@@ -134,29 +132,33 @@ variant="h5" >Dashboard</Typography>
               style={{fontWeight: "700", color: "black",fontFamily: "Quicksand"
               }}
               > 
-              Invest</Typography>
+               Number of refferals</Typography>
+
+
+
+               <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+               <Typography textAlign="center" justifyContent="center">0</Typography>
+
+               </Box>
+    
+               <Typography textAlign="center" fontSize={{xs:"17px", sm:"26px", md:"36px"}}
+              style={{fontWeight: "700", color: "black",fontFamily: "Quicksand"
+              }}
+              > 
+               Refferal ID</Typography>
+
+               <Box style={{ height: "100px", backgroundColor: "white"}} width={{xs: "80%", md: "50%"}}>
+              
+               </Box>
     
    
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Your name"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Email"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Enter your deposit wallet address"  />
-    
+   
+  
 
       
   </Stack>
 
-  <Stack
-  direction="row"
-  justifyContent="center"
-  alignItems="center"
-  spacing={2}
-  mt={5}
-><Button s sx={{ fontSize: { sm: "14px", md: "25px" } }}
-                variant="contained">Confirm</Button>
-                </Stack>
+ 
                 
 
   </Grid>

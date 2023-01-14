@@ -8,6 +8,8 @@ import Link from 'next/link'
 import ElevationScroll from "../component/minAppbar"
 import Switch, { SwitchProps } from "@mui/material/Switch";
 import { styled } from "@mui/material/styles";
+import { useAuthContex } from "../context/auth";
+import { useRouter } from "next/router";
 
 const AntSwitch = styled(Switch)(({ theme }) => ({
     width: 25,
@@ -55,9 +57,40 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
 
 
 export default function SignIn() {
+  const router = useRouter();
+  const [data, setData] = useState({});
+  const { login } = useAuthContex();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [password, setPassword] = useState(false);
+
+
+  const handleValue = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleLogin = (e) => {
+    setLoading(true);
+    // handleClick();
+    SignIn(data)
+      .then((res) => {
+        //redirect to home page
+        setSuccess(res.data.msg);
+        router.push("/");
+      })
+      .catch((e) => {
+        // display error to user
+        setError(e.message);
+        setLoading(0);
+      })
+      .finally(() => {
+        setLoading(0);
+      });
+  };
     return ( <>
     <ElevationScroll />
-    <Box px={{xs:"16px",md:0}} sx={{backgroundColor:"#424242"}} height="100vh">
+    <Box px={{xs:"16px",md:0}}  height="100vh">
       <Grid container mt={{md:"3.33vw"}}>
        <Grid item xs={12} md={12} mt={{xs:"12.00vw", md:"4.17vw"}} sx={{ mx: "auto", textAlign: "center" }}>
        <Typography variant='h4'
@@ -65,11 +98,11 @@ export default function SignIn() {
                 fontWeight: 700,
                 // fontSize: "30px",
                 // lineHeight: "42px",
-                color: "white",
+                color: "black",
                 marginBottom: {md:"1.39vw"}
               }}
             >
-              INVETEX
+              Sterling assests
             </Typography>
             <Stack width={"100%"} maxWidth={{   md: "32.22vw" }} mx="auto" 
           spacing={{xs:"6.00vw", md:"0.08vw"}} sx={{ mt:{xs:"4.00vw", md:"1.39vw"}, }}>
@@ -79,7 +112,12 @@ export default function SignIn() {
                 //   borderRadius={{ xs: "6.60vw", md: "2.29vw" }}
                 //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
                 >
-                     <TextField fullWidth label="Login or Email" id="fullWidth" style={{borderRadius: 5}}/>
+                     <TextField fullWidth label="Login or Email" id="fullWidth" style={{borderRadius: 5}}
+                      name="email"
+                      disableUnderline
+                      onChange={handleValue}
+                      // variant="standard"
+                      type="email"/>
                 </Box>
                
                 <Box 
@@ -88,7 +126,10 @@ export default function SignIn() {
                 //   borderRadius={{ xs: "6.60vw", md: "3.29vw" }}
                 //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
                 >
-                     <TextField fullWidth label="Password" id="fullWidth" />
+                     <TextField fullWidth label="Password" id="fullWidth" 
+                     name="password"
+                    type={password ? "text" : "password"}
+                    onChange={handleValue}/>
                 </Box>
                
                 <Box>
@@ -146,7 +187,7 @@ export default function SignIn() {
                 //   boxShadow={{ xs: "0px 2px 7px rgba(112, 112, 112, 0.16)" }}
                 >
                     <Stack alignItems="center" justifyContent="center" >
-                    <Button variant="contained"  sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 5, px: 16 }}>Login</Button>
+                    <Button  onClick={handleLogin} variant="contained"  sx={{ display: { xs: 'block', sm: 'block' }, backgroundColor: "#52b202", borderRadius: 5, px: 16 }}>Login</Button>
                     </Stack>
                 </Box>
             </Stack>
