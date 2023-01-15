@@ -90,7 +90,7 @@ export default function About() {
     
     <Box style={{backgroundColor: "#00251a",color: "white",  height: "200px"}} width={{xs: "100%", md: "350px"}}   pl={{xs: "80px"}} p={8}>
       <Typography style={{fontFamily: "Rowdies"}} textAlign="center">Phone Number</Typography>
-      <Typography style={{fontFamily: "Quicksand"}} textAlign="center" mt={3}>+2348054337851</Typography>
+      <Typography style={{fontFamily: "Quicksand"}} textAlign="center" mt={3}>+447476885706</Typography>
     
     </Box>
     <Box style={{backgroundColor: "#00251a",color: "white", height: "200px"}} width={{xs: "100%", md: "350px"}} elevation={24} p={8}>
@@ -101,7 +101,8 @@ export default function About() {
     <Box style={{backgroundColor: "#00251a",color: "white",  height: "200px"}} width={{xs: "100%", md: "350px"}} elevation={24} p={8}>
       <Typography style={{fontFamily: "Rowdies"}} textAlign="center">Office Address
 </Typography>
-      <Typography style={{fontFamily: "Quicksand"}} textAlign="center" mt={3}>3015 Suit pagla road, Singapore</Typography>
+      <Typography style={{fontFamily: "Quicksand"}} textAlign="center" mt={3}>13 Austin Friars, London EC2N
+2HE, United Kingdom</Typography>
     
     </Box>
    
