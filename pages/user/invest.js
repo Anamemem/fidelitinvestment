@@ -17,6 +17,11 @@ import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 import ForwardIcon from '@mui/icons-material/Forward';
 // import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import MultipleSelectCheckmarks from "../../component/user/dropdown"
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+// import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
 
 
 // import {Box,Stack,Button} from '@mui/material';
@@ -125,10 +130,18 @@ variant="h5" >Dashboard</Typography>
     <Grid item   xs={12} md={10} style={{backgroundColor: "#e0e0e0"}} 
   >
   
+  <Stack justifyContent="center"
 
-<Stack justifyContent="center"
   alignItems="center"
   spacing={2} 
+
+  direction="column">
+
+<Stack justifyContent="center"
+width={{xs: "100%", md: "70%"}}
+  alignItems="center"
+  spacing={2} 
+  px={{xs: "10px",sm: "20px", md: "100px"}}
   direction="column">
     <Typography textAlign="center" fontSize={{xs:"17px", sm:"26px", md:"36px"}}
               style={{fontWeight: "700", color: "black",fontFamily: "Quicksand"
@@ -137,15 +150,100 @@ variant="h5" >Dashboard</Typography>
               Invest</Typography>
     
    
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <MultipleSelectCheckmarks />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Your name"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Email"  />
-    <TextField sx={{ width: "35%",  backgroundColor: " #D9D9D9" }}  label="Enter your deposit wallet address"  />
+    {/* <MultipleSelectCheckmarks /> */}
+    <TextField
+              
+              
+              label="status"
+              sx={{  backgroundColor: " #D9D9D9" }} 
+              select
+              disableUnderline
+              fullWidth
+              variant="standard"
+              InputProps={{
+                disableUnderline: true,
+                startAdornment: <InputAdornment position="start">
+                  
+                </InputAdornment>,
+              }}
+            >
+
+              <MenuItem value={"1 hour"}>
+       Advisory
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              individual
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              institutional
+              </MenuItem>
+
+            </TextField>
+    <TextField
+              
+              
+              label="plan"
+              sx={{  backgroundColor: " #D9D9D9" }} 
+              select
+              disableUnderline
+              fullWidth
+              variant="standard"
+              InputProps={{
+                disableUnderline: true,
+                startAdornment: <InputAdornment position="start">
+                  
+                </InputAdornment>,
+              }}
+            >
+
+              <MenuItem value={"1 hour"}>
+       premium
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              silver
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              gold
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              diamond
+              </MenuItem>
+
+            </TextField>
+    <TextField
+              
+              
+              label="investment type"
+              sx={{  backgroundColor: " #D9D9D9" }} 
+              select
+              disableUnderline
+              fullWidth
+              variant="standard"
+              InputProps={{
+                disableUnderline: true,
+                startAdornment: <InputAdornment position="start">
+                  
+                </InputAdornment>,
+              }}
+            >
+
+              <MenuItem value={"1 hour"}>
+       digital Asset
+              </MenuItem>
+              <MenuItem value={"2 hour"}>
+              digital agriculture
+              </MenuItem>
+             
+
+            </TextField>
+
+    <TextField sx={{   backgroundColor: " #D9D9D9" }}  fullWidth label="Your name"  />
+    <TextField sx={{   backgroundColor: " #D9D9D9" }} fullWidth label="Email"  />
+    <TextField sx={{   backgroundColor: " #D9D9D9" }} fullWidth label="Enter your deposit wallet address"  />
     
 
       
+  </Stack>
   </Stack>
 
   <Stack
